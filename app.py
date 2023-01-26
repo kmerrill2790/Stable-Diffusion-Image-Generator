@@ -174,11 +174,11 @@ if check_password():
                 if model=='GeFeMi' or model=='Realistic Vision V1.1' or model=="Protogen V5.8" or model=="Protogen V5.3" or model=="Protogen V3.4" or model=='Deliberate':
                     model_inputs = {
                         'prompt': txt2img_prompt,
+                        'negative_prompt': txt2img_negative_prompt,
                         'height': height,
                         'width': width,
                         'num_inference_steps': steps,
                         'guidance_scale': scale,
-                        'negative': txt2img_negative_prompt,
                         'num_images_per_prompt': 1,
                         'seed': seed,
                     }
